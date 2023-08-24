@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.renter.RenterViewResults">
+   <children>
+      <TableView fx:id="searchResults" layoutX="43.0" layoutY="86.0" prefHeight="228.0" prefWidth="515.0">
+        <columns>
+          <TableColumn prefWidth="325.0" text="Listing Name" />
+          <TableColumn minWidth="0.0" prefWidth="189.0" text="Total Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="274.0" layoutY="27.0" text="Results">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="viewListingBtn" layoutX="259.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleViewListingBtnClick" text="View Listing" />
+      <Button fx:id="backBtn" layoutX="43.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleBackBtn" text="Back" />
+      <MenuButton layoutX="483.0" layoutY="47.0" mnemonicParsing="false" text="Sort By">
+        <items>
+          <MenuItem fx:id="sortByDistanceClosest" mnemonicParsing="false" onAction="#handleSortByDistanceClosest" text="Distance (Nearest)" />
+          <MenuItem fx:id="sortByDistanceFurthest" mnemonicParsing="false" onAction="#handleSortByDistanceFurthest" text="Distance (Furthest)" />
+            <MenuItem fx:id="sortByPriceLowest" mnemonicParsing="false" onAction="#handleSortByPriceLowest" text="Price (Lowest to Highest)" />
+            <MenuItem fx:id="sortByPriceHighest" mnemonicParsing="false" onAction="#handleSortByPriceHighest" text="Price (Highest to Lowest)" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>

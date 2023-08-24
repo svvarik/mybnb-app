@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.listing.ListingViewReviews">
+   <children>
+      <ScrollPane prefHeight="400.0" prefWidth="600.0">
+        <content>
+          <AnchorPane fx:id="reviewsContainer" minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="600.0">
+               <children>
+                  <Label layoutX="244.0" layoutY="34.0" text="Listing Reviews">
+                     <font>
+                        <Font name="Helvetica Neue" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

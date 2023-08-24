@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.renter.RenterLogin">
+   <children>
+      <Label layoutX="145.0" layoutY="40.0" text="Hello! Enter your info to get into the system">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="renterFirstName" layoutX="220.0" layoutY="146.0" promptText="First Name" />
+      <TextField fx:id="renterLastName" layoutX="220.0" layoutY="189.0" promptText="Last Name" />
+      <TextField fx:id="renterSinNumber" layoutX="220.0" layoutY="228.0" promptText="SIN #" />
+      <Button fx:id="loginSubmit" layoutX="272.0" layoutY="295.0" mnemonicParsing="false" text="Submit" />
+      <Text fx:id="errorText" fill="#bf0000" layoutX="139.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Helvetica Neue" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

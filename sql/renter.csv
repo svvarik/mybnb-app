@@ -1,0 +1,6 @@
+id,sin,email,password,first_name,last_name,date_of_birth,address_line_one,address_line_two,city,state,country,postal_code,occupation
+1,123456789,renter1@example.com,password123,John,Doe,1990-01-01,123 Main St,Apt 4B,New York,NY,USA,10001,Accountant
+2,987654321,renter2@example.com,pass456word,Jane,Smith,1985-05-15,456 Elm St,Apt 7C,Los Angeles,CA,USA,90001,Teacher
+3,111222333,renter3@example.com,password789,Emily,Williams,1988-03-21,789 Park Rd,,Miami,FL,USA,33101,Lawyer
+4,444555666,renter4@example.com,pass123word,Michael,Smith,1995-09-10,234 Bay St,,Toronto,ON,Canada,M5J 2L2,Marketing Manager
+5,777888999,renter5@example.com,word456pass,Laura,Johnson,1982-06-08,567 Lake Ave,,Chicago,IL,USA,60602,Doctor

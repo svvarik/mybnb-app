@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.host.HostManageListing">
+    <children>
+        <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <content>
+                <AnchorPane prefHeight="400.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="240.0" layoutY="24.0" text="Listing Details">
+                            <font>
+                                <Font name="Helvetica Neue" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="123.0" text="Address">
+                            <font>
+                                <Font name="Helvetica Neue" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="295.0" text="Amenities">
+                            <font>
+                                <Font name="Helvetica Neue" size="16.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="324.0" text="Essentials">
+                            <font>
+                                <Font name="Helvetica Neue" size="14.0" />
+                            </font>
+                        </Label>
+                        <CheckBox fx:id="hasWifi" disable="true" layoutX="42.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleAmenities" text="wifi">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasKitchen" disable="true" layoutX="279.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleAmenities" text="kitchen">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasWasher" disable="true" layoutX="42.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleAmenities" text="washer">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasDryer" disable="true" layoutX="279.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleAmenities" text="dryer">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasAc" disable="true" layoutX="42.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleAmenities" text="ac">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasHeating" disable="true" layoutX="279.0" layoutY="412.0" mnemonicParsing="false" onAction="#handleAmenities" text="heating">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasDedicatedWorkspace" disable="true" layoutX="42.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleAmenities" text="dedicated workspace">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasHairDryer" disable="true" layoutX="42.0" layoutY="472.0" mnemonicParsing="false" onAction="#handleAmenities" text="hair dryer">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasTv" disable="true" layoutX="279.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleAmenities" text="tv">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasIron" disable="true" layoutX="279.0" layoutY="472.0" mnemonicParsing="false" onAction="#handleAmenities" text="iron">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasPool" disable="true" layoutX="42.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleAmenities" text="pool">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasFreeParking" disable="true" layoutX="42.0" layoutY="562.0" mnemonicParsing="false" onAction="#handleAmenities" text="free parking">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasCrib" disable="true" layoutX="42.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleAmenities" text="crib">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasBbqGrill" disable="true" layoutX="42.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleAmenities" text="bbq grill">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasIndoorFireplace" disable="true" layoutX="42.0" layoutY="652.0" mnemonicParsing="false" onAction="#handleAmenities" text="indoor fireplace">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasHotTub" disable="true" layoutX="279.0" layoutY="532.0" mnemonicParsing="false" onAction="#handleAmenities" text="hot tub">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasEvCharger" disable="true" layoutX="279.0" layoutY="562.0" mnemonicParsing="false" onAction="#handleAmenities" text="ev charger">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasGym" disable="true" layoutX="279.0" layoutY="592.0" mnemonicParsing="false" onAction="#handleAmenities" text="gym">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasBreakfast" disable="true" layoutX="279.0" layoutY="622.0" mnemonicParsing="false" onAction="#handleAmenities" text="breakfast">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasSmokingAllowed" disable="true" layoutX="279.0" layoutY="652.0" mnemonicParsing="false" onAction="#handleAmenities" text="smoking allowed">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasBeachfront" disable="true" layoutX="41.0" layoutY="715.0" mnemonicParsing="false" onAction="#handleAmenities" text="beachfront">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasWaterfront" disable="true" layoutX="279.0" layoutY="715.0" mnemonicParsing="false" onAction="#handleAmenities" text="waterfront">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasSmokeAlarm" disable="true" layoutX="42.0" layoutY="778.0" mnemonicParsing="false" onAction="#handleAmenities" text="smoke alarm">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <CheckBox fx:id="hasCarbonMonoxideAlarm" disable="true" layoutX="279.0" layoutY="778.0" mnemonicParsing="false" onAction="#handleAmenities" text="carbon monoxide alarm">
+                            <font>
+                                <Font name="Helvetica Neue" size="13.0" />
+                            </font>
+                        </CheckBox>
+                        <Label layoutX="42.0" layoutY="506.0" text="Features">
+                            <font>
+                                <Font name="Helvetica Neue" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="690.0" text="Location">
+                            <font>
+                                <Font name="Helvetica Neue" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="42.0" layoutY="750.0" text="Safety">
+                            <font>
+                                <Font name="Helvetica Neue" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="347.0" layoutY="98.0" text="Listing Rating:" />
+                        <Label fx:id="listingRating" layoutX="439.0" layoutY="98.0" />
+                        <Button fx:id="backBtn" layoutX="36.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleBackBtnClick" text="Back" />
+                        <Button fx:id="viewReviewsBtn" layoutX="401.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleViewReviewsBtnClick" text="View Reviews" />
+                  <TextField fx:id="addressLineOne" disable="true" layoutX="39.0" layoutY="153.0" prefHeight="26.0" prefWidth="229.0" promptText="Address Line One" />
+                  <TextField fx:id="addressLineTwo" disable="true" layoutX="289.0" layoutY="153.0" prefHeight="26.0" prefWidth="229.0" promptText="Address Line Two" />
+                  <TextField fx:id="postalCode" disable="true" layoutX="39.0" layoutY="190.0" prefHeight="26.0" prefWidth="229.0" promptText="Postal Code" />
+                  <MenuButton fx:id="city" disable="true" layoutX="154.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleCityMenuItem" text="City">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
+                  <MenuButton fx:id="state" disable="true" layoutX="244.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleStateMenuItem" text="State / Province">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </MenuButton>
+                  <MenuButton fx:id="country" disable="true" layoutX="37.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleCountryMenuItem" text="Country">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Action 1" />
+                        <MenuItem mnemonicParsing="false" text="Action 2" />
+                     </items>
+                  </MenuButton>
+                  <TextField fx:id="listingName" disable="true" layoutX="36.0" layoutY="93.0" promptText="Listing Name" />
+                  <Button fx:id="editBtn" layoutX="36.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleEditBtnClick" text="Edit" />
+                  <Button fx:id="saveChanges" layoutX="104.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleSaveChangesBtnClick" text="Save Changes" />
+                  <Button fx:id="manageAvailability" layoutX="238.0" layoutY="55.0" mnemonicParsing="false" onAction="#handleManageAvailabilityBtnClick" text="Manage Availability" />
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" />
+                    </padding>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

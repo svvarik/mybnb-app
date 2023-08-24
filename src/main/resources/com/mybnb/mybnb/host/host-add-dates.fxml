@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.host.HostAddDates">
+   <children>
+      <Button fx:id="backBtn" layoutX="36.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleBackBtnClick" text="Back" />
+      <Label layoutX="262.0" layoutY="26.0" text="Add Dates">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="startDate" layoutX="28.0" layoutY="95.0" onAction="#handleStartDate" promptText="Start Date" />
+      <DatePicker fx:id="endDate" layoutX="28.0" layoutY="136.0" onAction="#handleEndDate" promptText="End Date" />
+      <TextField fx:id="price" layoutX="28.0" layoutY="175.0" onAction="#handlePriceTextField" promptText="Price" />
+      <Button fx:id="addBtn" layoutX="31.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleAddBtnClick" text="Add" />
+   </children>
+</AnchorPane>

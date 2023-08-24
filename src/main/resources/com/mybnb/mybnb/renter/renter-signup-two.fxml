@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.renter.RenterSignup">
+   <children>
+      <Label layoutX="56.0" layoutY="48.0" text="We need your credit card information:">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font></Label>
+      <TextField fx:id="creditCardNumber" layoutX="155.0" layoutY="88.0" onAction="#handleNumber" prefHeight="26.0" prefWidth="320.0" promptText="1234 4567 7891 1948">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></TextField>
+      <Text layoutX="216.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="/">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></Text>
+      <TextField fx:id="creditCardExpMonth" layoutX="155.0" layoutY="134.0" onAction="#handleExpMonth" prefHeight="26.0" prefWidth="47.0" promptText="01">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></TextField>
+      <TextField fx:id="creditCardExpYear" layoutX="236.0" layoutY="134.0" onAction="#handleExpYear" prefHeight="26.0" prefWidth="47.0" promptText="26">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></TextField>
+      <Label layoutX="56.0" layoutY="93.0" text="Card #">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="139.0" text="Expiry Date">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></Label>
+      <Label layoutX="56.0" layoutY="183.0" text="CCV">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></Label>
+      <TextField fx:id="creditCardCCV" layoutX="155.0" layoutY="179.0" onAction="#handleCCV" prefHeight="26.0" prefWidth="47.0" promptText="123">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></TextField>
+      <Button fx:id="submitBtn" layoutX="273.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleSubmitBtn" text="Submit">
+         <font>
+            <Font name="Helvetica Neue" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,6 @@
+id,title,host_id,base_price,property_type,longitude,latitude,address_line_one,address_line_two,city,state,country,postal_code,wifi,kitchen,washer,dryer,air_conditioning,heating,dedicated_workspace,hair_dryer,tv,iron,pool,free_parking,crib,bbq_grill,indoor_fireplace,hot_tub,ev_charger,gym,breakfast,smoking_allowed,beachfront,waterfront,smoke_alarm,carbon_monoxide_alarm
+1,Cozy Apartment,1,100,Apartment,-74.006,40.7128,123 Oak St,Apt 2A,New York,NY,USA,10002,1,1,1,1,1,1,1,1,1,1,0,1,1,0,0,0,0,1,0,0,0,0,0,0
+2,Luxury Villa,2,300,House,-118.2437,34.0522,456 Pine Ave,,Los Angeles,CA,USA,90003,1,1,1,1,1,1,1,1,1,0,1,0,1,1,1,1,0,1,1,1,0,0,0
+3,Modern Condo,1,200,Apartment,-87.6298,41.8781,789 Oak Ave,Apt 3B,Chicago,IL,USA,60603,1,1,1,0,1,1,1,1,1,1,1,1,0,0,0,1,0,0,1,1,1,1,0,0
+4,Charming Cottage,2,150,House,-79.3832,43.6532,123 Cedar St,,Toronto,ON,Canada,M4C 1B5,0,1,1,0,0,1,0,1,1,1,0,0,1,0,0,1,0,0,1,0,0,1,1,0
+5,Seaside Retreat,3,350,Guesthouse,-80.1918,25.7617,456 Palm Ave,,Miami,FL,USA,33103,1,1,1,1,1,1,1,1,0,1,1,0,0,1,0,0,0,0,1,1,1,1,1

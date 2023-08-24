@@ -1,0 +1,6 @@
+id,sin,email,password,first_name,last_name,date_of_birth,address_line_one,address_line_two,city,state,country,postal_code,occupation
+1,234567890,host1@example.com,password123,Michael,Johnson,1980-08-10,789 Maple St,,Chicago,IL,USA,60601,Engineer
+2,345678901,host2@example.com,pass456word,Susan,Miller,1975-12-25,987 Oak St,,San Francisco,CA,USA,94101,Designer
+3,111111111,host3@example.com,wordpass123,Robert,White,1972-11-15,345 Elm St,,Los Angeles,CA,USA,90002,Architect
+4,222222222,host4@example.com,pass123word456,Elizabeth,Anderson,1984-07-29,456 Maple St,,San Francisco,CA,USA,94102,Artist
+5,333333333,host5@example.com,password123456,David,Miller,1979-02-18,567 Oak St,,New York,NY,USA,10003,Photographer

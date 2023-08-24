@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.renter.RenterBookingDetails">
+   <children>
+      <Label layoutX="244.0" layoutY="37.0" text="Booking Details">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="100.0" text="Start Date:" />
+      <Label layoutX="162.0" layoutY="129.0" text="End Date:" />
+      <Label layoutX="162.0" layoutY="158.0" text="Status:" />
+      <Label layoutX="162.0" layoutY="185.0" text="Listing Name:" />
+      <Label layoutX="162.0" layoutY="212.0" text="Created:" />
+      <Label layoutX="162.0" layoutY="240.0" text="Last Updated:" />
+      <Text fx:id="startDateText" layoutX="302.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="endDateText" layoutX="302.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="statusText" layoutX="302.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="listingNameText" layoutX="302.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="createdText" layoutX="302.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="lastUpdatedText" layoutX="302.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+   </children>
+</AnchorPane>

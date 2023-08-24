@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.mybnb.mybnb.WelcomeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <Label text="Welcome to MyBnB! Select which type of account you want to login or sign up for:">
+        <font>
+          <Font name="Helvetica Neue" size="13.0"/>
+        </font>
+    </Label>
+    <SplitPane dividerPositions="0.5" prefHeight="247.0" prefWidth="560.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="61.0" prefWidth="301.0">
+            <Button fx:id="renterLoginBtn" layoutX="112.0" layoutY="90.0" mnemonicParsing="false"
+                    onAction="#onRenterLoginBtnClick" text="Renter">
+                <font>
+                    <Font name="Helvetica Neue" size="13.0"/>
+                </font>
+            </Button>
+            <Button fx:id="hostLoginBtn" layoutX="117.0" layoutY="129.0" mnemonicParsing="false"
+                    onAction="#onHostLoginBtnClick" text="Host">
+                <font>
+                    <Font name="Helvetica Neue" size="13.0"/>
+                </font>
+            </Button>
+            <Label layoutX="117.0" layoutY="38.0" prefHeight="16.0" prefWidth="45.0" text="Login"
+                   textAlignment="CENTER">
+                <font>
+                    <Font name="Helvetica Neue" size="16.0"/>
+                </font>
+            </Label>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="61.0" prefWidth="215.0"
+                    SplitPane.resizableWithParent="false">
+            <Label layoutX="124.0" layoutY="38.0" prefHeight="20.0" prefWidth="55.0" text="Signup">
+                <font>
+                    <Font name="Helvetica Neue" size="16.0"/>
+                </font>
+            </Label>
+            <Button fx:id="renterSignupBtn" layoutX="124.0" layoutY="90.0" mnemonicParsing="false"
+                    onAction="#onRenterSignupBtnClick" text="Renter">
+                <font>
+                    <Font name="Helvetica Neue" size="13.0"/>
+                </font>
+            </Button>
+            <Button fx:id="hostSignupBtn" layoutX="129.0" layoutY="129.0" mnemonicParsing="false"
+                    onAction="#onHostSignupBtnClick" text="Host">
+                <font>
+                    <Font name="Helvetica Neue" size="13.0"/>
+                </font>
+            </Button>
+        </AnchorPane>
+    </SplitPane>
+    <Button fx:id="adminBtn" mnemonicParsing="false" onAction="#onAdminBtnClick" text="Admin">
+        <font>
+          <Font name="Helvetica Neue" size="13.0"/>
+        </font>
+    </Button>
+</AnchorPane>

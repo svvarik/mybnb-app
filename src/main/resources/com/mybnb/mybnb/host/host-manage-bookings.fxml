@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.host.HostManageBookings">
+    <children>
+        <Label layoutX="260.0" layoutY="37.0" text="Your Bookings">
+            <font>
+                <Font name="Helvetica Neue" size="16.0" />
+            </font>
+        </Label>
+        <TableView layoutX="29.0" layoutY="71.0" prefHeight="213.0" prefWidth="533.0">
+            <columns>
+                <TableColumn fx:id="startDateCol" editable="false" prefWidth="75.0" sortable="false" text="Start Date" />
+                <TableColumn fx:id="endDateCol" editable="false" prefWidth="75.0" sortable="false" text="End Date" />
+                <TableColumn fx:id="cityCol" editable="false" prefWidth="75.0" sortable="false" text="City" />
+                <TableColumn fx:id="listingNameCol" editable="false" prefWidth="115.0" sortable="false" text="Listing Name" />
+                <TableColumn fx:id="statusCol" editable="false" prefWidth="79.0" sortable="false" text="Status" />
+            <TableColumn fx:id="renterCol" editable="false" prefWidth="113.0" sortable="false" text="Renter" />
+            </columns>
+        </TableView>
+        <ButtonBar layoutX="336.0" layoutY="287.0" prefHeight="52.0" prefWidth="226.0">
+            <buttons>
+                <Button fx:id="reviewRenterBtn" mnemonicParsing="false" onAction="#handleReviewRenterBtnClick" text="Review Renter" />
+            </buttons>
+        </ButtonBar>
+        <Button fx:id="cancelBookingBtn" layoutX="459.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleCancelBookingBtnClick" text="Cancel Booking" textFill="#c90000" />
+        <Button fx:id="viewListingBtn" layoutX="29.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleViewListingBtnClick" text="View Listing" />
+        <Button fx:id="viewBookingDetailsBtn" layoutX="128.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleViewBookingDetailsBtnClick" text="View Booking Details" />
+    </children>
+</AnchorPane>

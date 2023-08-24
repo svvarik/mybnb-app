@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mybnb.mybnb.host.HostHomepage">
+    <children>
+        <Label layoutX="224.0" layoutY="50.0" prefHeight="20.0" prefWidth="152.0" text="Welcome to MyBnB ">
+         <font>
+            <Font name="Helvetica Neue" size="16.0" />
+         </font></Label>
+        <Button fx:id="viewBookingsBtn" layoutX="251.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleViewBookingsBtnClick" text="View Bookings" />
+        <Button fx:id="viewListingsBtn" layoutX="255.0" layoutY="143.0" mnemonicParsing="false" onAction="#handleViewListingsBtnClick" text="View Listings" />
+        <Button fx:id="viewReviewsBtn" layoutX="254.0" layoutY="230.0" mnemonicParsing="false" onAction="#handleViewReviewsBtnClick" text="View Reviews" />
+        <Button fx:id="editProfileBtn" layoutX="265.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleEditProfileBtnClick" text="Edit Profile" />
+        <Button fx:id="deleteAccountBtn" layoutX="252.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleDeleteAccountBtnClick" text="Delete Account" textFill="#d00000" />
+      <Button fx:id="newListingsBtn" layoutX="262.0" layoutY="187.0" mnemonicParsing="false" onAction="#handleNewListingsBtnClick" text="New Listing" />
+    </children>
+</AnchorPane>
